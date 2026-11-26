@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi mundo | Luna Vargas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="hero">
+        <div class="hero-contenido">
+            <span class="etiqueta">✦ MI PAGINA PERSONAL ✦</span>
+
+            <h1>¡Hola, soy Luna! 💜</h1>
+
+            <p>
+                Un poquito de mí, mis gustos, mis hobbies
+                y las personas que hacen parte de mi vida.
+            </p>
+
+            <a href="#sobre-mi" class="boton-hero">
+                Conóceme un poquito ↓
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PERFIL -->
+        <section class="perfil" id="sobre-mi">
+
+            <div class="perfil-imagen">
+                <img src="foto.jpeg" alt="Fotografía de Luna" class="foto">
+            </div>
+
+            <span class="etiqueta-seccion">SOBRE MÍ</span>
+
+            <h2>Conoce un poco de mí</h2>
+
+            <p class="descripcion">
+                ¡Hola! Soy Luna Vargas, una persona que disfruta
+                aprender cosas nuevas, compartir momentos especiales
+                y descubrir nuevas experiencias.
+            </p>
+
+            <div class="datos-personales">
+
+                <div class="dato">
+                    <span class="dato-icono">👩</span>
+                    <div>
+                        <strong>Nombre</strong>
+                        <p>Luna Vargas</p>
+                    </div>
+                </div>
+
+                <div class="dato">
+                    <span class="dato-icono">🎂</span>
+                    <div>
+                        <strong>Edad</strong>
+                        <p>20 años</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>✨ Mis hobbies ✨</h3>
+
+            <div class="hobbies">
+
+                <div class="hobby">
+                    <span>🎵</span>
+                    <p>Escuchar música</p>
+                </div>
+
+                <div class="hobby">
+                    <span>🎬</span>
+                    <p>Ver series y películas</p>
+                </div>
+
+                <div class="hobby">
+                    <span>💻</span>
+                    <p>Aprender programación</p>
+                </div>
+
+                <div class="hobby">
+                    <span>💗</span>
+                    <p>Compartir con amigos y familia</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="formulario">
+
+            <span class="etiqueta-seccion">CONEXIONES</span>
+
+            <h2>Agregar un amigo 💌</h2>
+
+            <p class="texto-formulario">
+                Registra a tus amigos y crea tu pequeña lista de personas especiales.
+            </p>
+
+            <form id="formAmigos">
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe el nombre"
+                        required
+                        minlength="2"
+                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]+"
+                        title="Solo se permiten letras y espacios."
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+
+                    <input
+                        type="text"
+                        id="apellido"
+                        placeholder="Escribe el apellido"
+                        required
+                        minlength="2"
+                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]+"
+                        title="Solo se permiten letras y espacios."
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="ejemplo@gmail.com"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="boton-guardar">
+                    ✨ Guardar amigo
+                </button>
+
+            </form>
+
+            <div id="mensaje" class="mensaje"></div>
+
+        </section>
+
+        <!-- LISTA DE AMIGOS -->
+        <section class="lista">
+
+            <div class="titulo-lista">
+
+                <div>
+                    <span class="etiqueta-seccion">MI CÍRCULO</span>
+                    <h2>Mis amigos 💜</h2>
+                </div>
+
+                <div class="contador">
+                    <span id="contadorAmigos">0</span>
+                    <small>amigos</small>
+                </div>
+
+            </div>
+
+            <div id="listaAmigos" class="amigos-grid">
+
+                <div class="estado-vacio">
+                    <span>💌</span>
+                    <p>Aún no has agregado amigos.</p>
+                    <small>¡Anímate a registrar el primero!</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>Hecho con 💜 por Luna Vargas</p>
+
+        <small>Mi página personal · 2026</small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
